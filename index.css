@@ -98,32 +98,83 @@ h1,h2,h3{
 
 .Intro{
     display: grid;
-    
+    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: center;
+    align-content: center;
+    width: 1200px;
+     
+}
     
+
+.sidebar{
     background: var(--glass);
-    width: 90%;
-    height: 30%;
-   margin:auto;
-   border-radius: 1rem;
+    float: right;
+    margin: 0;
+    width:20%;
+    height:300px;
+    font-weight: var(--weight);
+
+}
+.exp-head{
+    color: var(--Textcolor);
+    font-family: var(--fam);
+}
+.profile{
+    padding: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-size: cover;
+    display: block;
+}
+.content-intro{
+    background: var(--glass);
+    width: 80%;
+    height: 300px;
+    font-family: var(--fam);
+    color: var(--Textcolor);  
     
 }
+.text-intro{
+    margin-top: 40px;
+}
+.sidebar-text{
+    padding: 7px;
+    color: var(--Textcolor);
+    font-weight: var(--weight);
+    font-family: var(--fam);
 
-
+}
 @media screen and (max-width: 1200px){
     .Intro,.sidebar,.content-intro{
         width:95%;
     }
-    
     }
 
-
+.e-head{
+    font-weight: var(--weight);
+    color: var(--Textcolor);
+    font-family: var(--fam);
+    padding: 5px;
+}
+.about-head,.projects-head,.others-head,.contact-head{
+    font-family: var(--fam);
+    font-weight: var(--weight);
+    color: var(--Textcolor);
+    padding: 30px;
+}
+.about-content,.others-content{
+    font-family: var(--fam);
+    color: var(--Textcolor);
+    padding: 3px;
+}
 
 
 .s1{
    
     width: 90%;
-    height: 90%;
+    height: 100%;
     background: var(--glass);
     margin-top: 30px;
     border-radius: 2rem;
