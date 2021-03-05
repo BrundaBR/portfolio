@@ -1,12 +1,165 @@
+:root{
+    --Textcolor: rgb(54, 150, 153);
+    --glass:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
+    --backgroundcolor: linear-gradient(to right top,#65dfc9,#6cdbeb);
+   --weight:1000;
+   --fam:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+   
     
 }
 body{
-    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    background: var(--backgroundcolor);
 }
+.main-container{
+    width: 1200px;
+    
+}
+@media screen and (max-width: 1200px){
+.main-container{
+    width:95%;
+}
+
+}
+.main-head{
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height:5em;
+    color: white;
+    font-weight: var(--weight);
+    font-size: 30px;
+    font-family: var(--fam);
+
+   
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+a{
+    color: var(--Textcolor);
+    font-weight: var(--weight);
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.ele-1{
+    background:var(--glass);
+    width: 300px;
+    height: 100px;
+    border-radius: 2rem;
+    overflow: auto;
+    
+}
+.ele-2{
+    background:var(--glass);
+    width: 300px;
+    height: 100px;
+    border-radius: 2rem;
+    overflow: auto;
+    
+    
+    
+}
+.ele-3{
+    background:var(--glass);
+    width: 300px;
+    height: 100px;
+    border-radius: 2rem;
+    overflow: auto;
+    
+}
+@media screen and (max-width: 1200px){
+    .ele-1,.ele-2,.ele-3{
+        width:95%;
+    }
+    
+    }
+
+h1,h2,h3{
+    color: rgb(54, 150, 153); ;
+    font-weight: var(--weight);
+}
+
+.Intro{
+    display: grid;
+    
+    justify-content: center;
+    
+    background: var(--glass);
+    width: 90%;
+    height: 30%;
+   margin:auto;
+   border-radius: 1rem;
+    
+}
+
+
+@media screen and (max-width: 1200px){
+    .Intro,.sidebar,.content-intro{
+        width:95%;
+    }
+    
+    }
+
+
+
+
+.s1{
+   
+    width: 90%;
+    height: 90%;
+    background: var(--glass);
+    margin-top: 30px;
+    border-radius: 2rem;
+    margin: auto;
+    
+
+}
+.s2{
+    
+    
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background: var(--glass);
+    margin-top: 30px;
+    border-radius: 2rem;
+}
+.s3{
+    
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background: var(--glass);
+    margin-top: 30px;
+    border-radius: 2rem;
+}
+.s4{
+ 
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background: var(--glass);
+    margin-top: 30px;
+    border-radius: 2rem;
+}
+/* }
 .mainhead{
     text-align: center;
     padding-top: 10px;
@@ -149,4 +302,4 @@ a{
     padding-right: 30px;
 
 
-   }
+   } */
