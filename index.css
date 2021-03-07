@@ -1,11 +1,16 @@
 :root{
     --Textcolor: rgb(54, 150, 153);
+    --TextWhite:#fff;
     --glass:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
     --backgroundcolor: linear-gradient(to right top,#65dfc9,#6cdbeb);
    --weight:1000;
    --fam:Verdana, Geneva, Tahoma, sans-serif;
+   --bluegrad:linear-gradient(to bottom, #6666ff 0%, #66ffff 100%);
+   --gradcolor2:linear-gradient(to bottom, #80d0c7  0%,  #13547a 150%);
+   --gradgentlecare:linear-gradient(to bottom, #ffc3a0  0%,  #ffafbd 100%);
+   --profilecolor:linear-gradient(to right top,#82a8e2 10%,#6cdbeb 50%);
 }
-
+/* linear-gradient(to right top,#65dfc9,#6cdbeb); */
 *{
     margin:0;
     padding: 0;
@@ -28,10 +33,11 @@ body{
 .main-head{
     margin-top: 10px;
     display: grid;
+   
     justify-content: center;
     align-content: center;
-    min-height:5em;
-    color: white;
+    min-height:3em;
+    color:rgba(29, 29, 126, 0.425);
     font-weight: var(--weight);
     font-size: 30px;
     font-family: var(--fam);
@@ -46,8 +52,9 @@ body{
     align-content: center;
     
     
+    
 }
-a{
+.ele1,.ele2,.ele3{
     color: var(--Textcolor);
     font-weight: var(--weight);
     margin-top: 40px;
@@ -65,6 +72,8 @@ a{
     border-radius: 2rem;
     overflow: auto;
     
+    margin-right: 10px;
+    
 }
 .ele-2{
     background:var(--glass);
@@ -72,6 +81,7 @@ a{
     height: 100px;
     border-radius: 2rem;
     overflow: auto;
+    margin-right: 10px;
     
     
     
@@ -82,6 +92,7 @@ a{
     height: 100px;
     border-radius: 2rem;
     overflow: auto;
+    margin-right: 10px;
     
 }
 @media screen and (max-width: 1200px){
@@ -94,6 +105,40 @@ a{
 h1,h2,h3{
     color: rgb(54, 150, 153); ;
     font-weight: var(--weight);
+}
+.contact{
+    padding: 0px;
+    width: 40px;
+    height: 30px;
+    border-radius: 0px;
+    background-size: cover;
+    display: block;
+    
+
+
+}
+.around{
+    background: var(--glass);
+    color: var(--TextWhite);
+    padding: 0px;
+    border-radius: 3rem;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+   
+
+}
+.atext{
+    text-decoration:none;
+    color: var(--TextWhite);
+    padding: 15px;
+    float: left;
+    font-family: var(--fam);
+    font-weight: var(--weight);
+    
 }
 
 .Intro{
@@ -108,12 +153,14 @@ h1,h2,h3{
     
 
 .sidebar{
-    background: var(--glass);
+    background: var(--profilecolor);
+    
     float: right;
     margin: 0;
     width:20%;
     height:300px;
     font-weight: var(--weight);
+    z-index: 0;
 
 }
 .exp-head{
@@ -121,12 +168,13 @@ h1,h2,h3{
     font-family: var(--fam);
 }
 .profile{
-    padding: 30px;
+    padding: 20px;
     width: 100px;
     height: 100px;
     border-radius: 100px;
     background-size: cover;
     display: block;
+    z-index: 3;
 }
 .content-intro{
     background: var(--glass);
@@ -141,7 +189,8 @@ h1,h2,h3{
 }
 .sidebar-text{
     padding: 7px;
-    color: var(--Textcolor);
+    
+    color: white;
     font-weight: var(--weight);
     font-family: var(--fam);
 
@@ -151,14 +200,49 @@ h1,h2,h3{
         width:95%;
     }
     }
+.about-image{
+    width: 70px;
+    height: 60px;
+    border-radius: 10px;
+    background-size: cover;
 
+}
+.exp1{
+    
+    width: 30px;
+    height: 50px;
+    border-radius: 10px;
+    background-size: cover;
+
+
+}
+.exp-head{
+    padding:10px;
+}
+.about{
+    padding: 20px;
+}
+.extra-projects{
+    margin-top: 50px;
+    background: var(--glass);
+    width: 90%;
+    height: 70%;
+    border-radius: 2rem;
+}
 .e-head{
     font-weight: var(--weight);
-    color: var(--Textcolor);
+    color: var(--TextWhite);
     font-family: var(--fam);
     padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--profilecolor);
+    height: 100%;
+    width: 30%;
+    border-radius: 2rem;
 }
-.about-head,.projects-head,.others-head,.contact-head{
+.about-head,.projects-head,.others-head{
     font-family: var(--fam);
     font-weight: var(--weight);
     color: var(--Textcolor);
@@ -174,7 +258,7 @@ h1,h2,h3{
 .s1{
    
     width: 90%;
-    height: 100%;
+    height: 70%;
     background: var(--glass);
     margin-top: 30px;
     border-radius: 2rem;
@@ -187,7 +271,7 @@ h1,h2,h3{
     
     margin: auto;
     width: 90%;
-    height: 90%;
+    height: 70%;
     background: var(--glass);
     margin-top: 30px;
     border-radius: 2rem;
@@ -196,7 +280,7 @@ h1,h2,h3{
     
     margin: auto;
     width: 90%;
-    height: 90%;
+    height: 70%;
     background: var(--glass);
     margin-top: 30px;
     border-radius: 2rem;
@@ -205,152 +289,86 @@ h1,h2,h3{
  
     margin: auto;
     width: 90%;
-    height: 90%;
+    height: 20%;
     background: var(--glass);
     margin-top: 30px;
     border-radius: 2rem;
 }
-/* }
-.mainhead{
-    text-align: center;
-    padding-top: 10px;
-    color: white;
-    font-size: 3rem;
+.exp{
+    margin-top: 70px;
+    border-radius: 2rem;
+    background: var(--glass);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+
 }
-.squares{
-    padding: 50px;
+
+.projects-content{
+    color: var(--Textcolor);
+    font-family: var(--fam);
 }
-a{
-    text-decoration: none;
-    color: rgb(54, 150, 153);
-    font-style: bold;
-    font-size: 1.5rem;
-    font-weight: 1000;
+.project1,.project2{
     
-}
-.sq1{
-   float: right;
- 
-   padding-top: 50px;
-   border-radius: 2rem;
-   margin-right: 50px;
-    width: 20%;
-   height: 20%;
-    background:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
-}
-.sq2{
-  
-    float: right;
-    padding-top: 50px;
-   border-radius: 2rem;
-    width: 20%;
-    height: 20%;
-    margin-left: 50px;
-    margin-right: 50px;
-    background:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
-}
-.sq3{
-  
-    float: right;
-    margin-right: 200px;
-    padding-top: 50px;
-   border-radius: 2rem;
-    width: 20%;
-    height: 20%;
-    background:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
-}
-
-#about{
-    background:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
-    width: 95%;
-   
-    height: 100%;
-    margin: 0px;
-   
-    border-radius: 2rem;
-    padding: 20px;
-    margin-top: 100px;
-}
-#projects{
-    background:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
-    margin: 0px;
-    padding: 20px;
-    width: 95%;
-    height: 100%;
-    border-radius: 2rem;
-    margin-top: 100px;
-}
-#others{
-    background:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
-    width: 95%;
-    height: 100%;
-    margin: 0px;
-    border-radius: 2rem;
-    padding: 20px;
-    margin-top: 100px;
-}
-.profile{
-    margin-top: 100px;
-    border-radius: 2rem;
-    background:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
-    width: 95%;
-    height:56%
-}
-.sidebar{
-    width: 20%;
-    height: 100%;
-    background:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
-    float: left;
-    padding: 20px;
-    border-radius: 2rem;
-    font-size: 1.5rem;
-    color: rgb(54, 150, 153);
-    font-weight: 100;
-    font-style: bold;
-}
-
-
-.profileimg{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
+    padding: 5px;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
     background-size: cover;
-    display: block;
-   }
-   .info{
-       font-size: 0.8rem;
-       color: rgb(54, 150, 153);
-       
-       font-weight: 200;
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-   }
+}
+.p1{
+    text-decoration: none;
+    color: var(--Textcolor);
+}
+.projects-head{
+    color: var(--TextWhite);
+    font-weight: var(--weight);
+}
+.img-down{
+    width: 30px;
+    height: 20px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+.git,.linked{
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+.contact-head{
+    font-weight: var(--weight);
+    font-family: var(--fam);
+    color: var(--TextWhite);
+    padding: 20px;
+   
+}
+.contact{
+    background:var(--glass);
+    width: 90%;
+    height:30%;
+}
+.extra-exp{
+    margin: auto;
+    background:var(--glass);
+    width: 90%;
+    height: 70%;
+    border-radius: 2rem;
+    color: var(--Textcolor);
+    font-family: var(--fam);
+   
 
-   .summary{
-       font-size: 1rem;
-       color: rgb(54, 150, 153);
-      
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-       margin-top: 50px;
-      
-   }
-   .headsummary{
-    font-size: 1rem;
-    color: rgb(54, 150, 153);
-    font-weight: 1000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    float: left;
-    padding-top: 50px;
-    padding-left: 20px;
- 
-   }
-   .content{
-    font-size: 1rem;
-    color: rgb(54, 150, 153);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
+}
+.exp2{
+    padding: 10px;
+}
+.projects-content2{
+    padding: 20px;
+    color: var(--Textcolor);
+    font-family: var(--fam);
 
-
-   } */
+}
