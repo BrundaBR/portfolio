@@ -3,7 +3,7 @@
     --TextWhite:#fff;
     --glass:linear-gradient(to right top,rgb(255,255,255,0.7),rgb(255,255,255,0.3));
     --backgroundcolor: linear-gradient(to right top,#65dfc9,#6cdbeb);
-   --weight:1000;
+   --weight:1500;
    --fam:Verdana, Geneva, Tahoma, sans-serif;
    --bluegrad:linear-gradient(to bottom, #6666ff 0%, #66ffff 100%);
    --gradcolor2:linear-gradient(to bottom, #80d0c7  0%,  #13547a 150%);
@@ -106,35 +106,30 @@ h1,h2,h3{
     color: rgb(54, 150, 153); ;
     font-weight: var(--weight);
 }
-.contact{
-    padding: 0px;
-    width: 40px;
-    height: 30px;
-    border-radius: 0px;
-    background-size: cover;
-    display: block;
-    
 
-
-}
 .around{
     background: var(--glass);
     color: var(--TextWhite);
-    padding: 0px;
+    padding: 10px;
     border-radius: 3rem;
     width: 200px;
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 5;
    
+   
+
+}
+.img-connect{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
 
 }
 .atext{
     text-decoration:none;
     color: var(--TextWhite);
-    padding: 15px;
+    margin-top: 10px;
+    margin-left: 30px;
     float: left;
     font-family: var(--fam);
     font-weight: var(--weight);
@@ -197,7 +192,7 @@ h1,h2,h3{
 }
 @media screen and (max-width: 1200px){
     .Intro,.sidebar,.content-intro{
-        width:95%;
+        width:75%;
     }
     }
 .about-image{
@@ -371,4 +366,188 @@ h1,h2,h3{
     color: var(--Textcolor);
     font-family: var(--fam);
 
+}
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+/* laptop */
+@media(max-width:1440px){
+    html{
+        font-size: 70%;
+    }
+    .content-intro{
+        
+        width: 80%;
+        height: 300px;
+        padding: 20px;
+         
+        
+    }
+    .sidebar{
+        width: 80%;
+        height: 300px;
+        padding: 20px;
+
+    }
+    .profile{
+        padding: 20px;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-size: cover;
+        display: block;
+        z-index: 3;
+    }
+    .projects-content2{
+        padding: 50px;
+        color: var(--Textcolor);
+        font-family: var(--fam);
+    
+    }
+    .project1{
+        width: 350px;
+        height: 200px;
+    }
+    .extra-exp{
+        padding: 30px;
+    }
+    .s1,.s2,.s3,.s4{
+        height: 70%;
+    }
+
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+/* mobile*/
+@media(max-width:360px) {
+    html{
+        font-size: 70%;
+    }
+    .content-intro{
+        
+        width: 80%;
+        height: 200px;
+        padding: 20px;
+         
+        
+    }
+    .sidebar{
+        width: 20%;
+        height: 200px;
+        padding: 20px;
+
+    }
+    .profile{
+        padding: 0px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-size: cover;
+        display: block;
+        z-index: 3;
+    }
+    .projects-content2{
+        padding: 50px;
+        color: var(--Textcolor);
+        font-family: var(--fam);
+    
+    }
+    .project1,.project2{
+        width: 100px;
+       
+        height:100px;
+    }
+    .extra-exp{
+        height: 50%;
+        width: 90%;
+        padding: 30px;
+    }
+    .s1,.s2,.s3,.s4{
+        height: 70%;
+    }
+    .sidebar-text{
+        padding: 7px;
+        
+        color: white;
+        font-size: 5px;
+        font-family: var(--fam);
+    
+    }
+    .around{
+        width: 90%;
+        height: 20%;
+    }
+    .img-connect{
+        width: 20px;
+        height: 20px;
+        float: left;
+        height:auto;
+    }
+    .atext{
+        font-size: 10px;
+       
+    }
+
+}
+
+@media(max-width:600px) {
+    html{
+        font-size: 70%;
+    }
+    .project1,.project2{
+        width: 60%;
+        height:30%;
+    }
+    .profile{
+        width: 40%;
+        height:20%;
+
+    }
+}
+
+@media(max-width:769px) {
+    html{
+        font-size: 50%;
+    }
+    .project1,.project2{
+        width: 60%;
+        height:30%;
+    }
+    .profile{
+        width: 40%;
+        height:20%;
+
+    }
+    .around{
+        width: 90%;
+        height: 20%;
+    }
+    .img-connect{
+        width: 0px;
+        height: 0px;
+        padding: 0px;
+       
+    }
+    .atext{
+        font-size: 8px;
+        
+       
+       
+    }
 }
